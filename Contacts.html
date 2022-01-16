@@ -25,23 +25,14 @@
 			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
 		</div>
 <![endif]-->
+	
+	<script src="js/contact.js"></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
 (function() {
 emailjs.init("user_xv5kt9BvJ5ahWNYlsFXlk");
 })();
-</script>
-<script>
-	emailjs.send("service_xstypie","template_77m9r45","ContactForm",{
-from_name: document.queryselector("from_name").value,
-to_name: "Samreen",
-message: document.queryselector("message").value,
-email_to: document.queryselector("email").value,
-}).then(response=>{
-	console.log("Success");
-
-});
 
 	</script>
 
@@ -114,7 +105,7 @@ function MM_validateForm() { //v4.0
 								<span>Your Message:</span>
 								<textarea name="message" cols="1" rows="1" id="message"></textarea>
 							</div>
-							<a href="#" onClick="document.getElementById('ContactForm').submit()">Submit</a>
+							<a href="#" onClick="sendMail()">Submit</a>
 							<a href="#" onClick="document.getElementById('ContactForm').reset()">Clear</a>
 						</div>
 					</form>
