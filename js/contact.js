@@ -5,8 +5,12 @@ function sendMail(params){
     email:document.getElementById("email").value, 
   };
   emailjs.send("service_xstypie","template_77m9r45",tempParams)
-  .then(function(res){
-    console.log("success", res.status);
-  })
+  .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
 }
 
