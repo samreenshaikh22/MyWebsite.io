@@ -33,8 +33,8 @@ emailjs.init("user_xv5kt9BvJ5ahWNYlsFXlk");
 })();
 </script>
 <script>
-	emailjs.send("service_xstypie","template_77m9r45",{
-from_name: document.queryselector("name").value,
+	emailjs.send("service_xstypie","template_77m9r45","ContactForm",{
+from_name: document.queryselector("from_name").value,
 to_name: "Samreen",
 message: document.queryselector("message").value,
 email_to: document.queryselector("email").value,
@@ -96,7 +96,7 @@ function MM_validateForm() { //v4.0
 				<div class="wrapper">
 				  <section class="col1">
 						<h2 class="under">Contact form</h2>
-						<form id= "ContactForm" onSubmit="MM_validateForm('email','','RisEmail');return document.MM_returnValue">
+						<form id= "ContactForm" method="Post" onSubmit="MM_validateForm('email','','RisEmail');return document.MM_returnValue">
 						<div>
 							<div  class="wrapper">
 								<span>Your Name:</span>
