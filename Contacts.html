@@ -33,12 +33,15 @@ emailjs.init("user_xv5kt9BvJ5ahWNYlsFXlk");
 })();
 </script>
 <script>
-	emailjs.sendForm("service_xstypie", "template_77m9r45", "#ContactForm")
-    .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-    }, function(error) {
-       console.log('FAILED...', error);
-    });
+	emailjs.send("service_xstypie","template_77m9r45",{
+from_name: document.queryselector("name").value,
+to_name: "Samreen",
+message: document.queryselector("message").value,
+email_to: document.queryselector("email").value,
+}).then(response=>{
+	console.log("Success");
+
+});
 
 	</script>
 
