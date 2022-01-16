@@ -8,10 +8,11 @@ function sendMail(params){
   .then(() => {
       btn.value = 'Send Email';
       alert('Sent!');
+      document.getElementById('ContactForm').reset();
+
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
     });
-  document.getElementById('ContactForm').reset()
 }
 
