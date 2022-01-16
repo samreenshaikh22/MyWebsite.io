@@ -4,7 +4,6 @@ function sendMail(params){
     message:document.getElementById("message").value, 
     email:document.getElementById("email").value, 
     city:document.getElementById("city").value, 
-     document.getElementById('ContactForm').reset();
 
   };
   emailjs.send("service_xstypie","template_77m9r45",tempParams)
