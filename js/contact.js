@@ -8,11 +8,9 @@ function sendMail(params){
   };
   emailjs.send("service_xstypie","template_77m9r45",tempParams)
   .then(() => {
-      btn.value = 'Send Email';
       alert('Sent!');
 
     }, (err) => {
-      btn.value = 'Send Email';
       alert(JSON.stringify(err));
     });
 }
