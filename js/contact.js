@@ -12,5 +12,6 @@ function sendMail(params){
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
     });
+  document.getElementById('ContactForm').reset()
 }
 
