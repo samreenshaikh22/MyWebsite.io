@@ -6,7 +6,7 @@
     $email = $_POST['email']; 
     $message = $_POST['message']; 
 
-    $to = "inquiry@abdiconsultancy.com";
+    $to = "sadiqalisayed14@gmail.com";
     $subject = "Inquiry";
     $body = " $name, $email, $message";
 mail($to, $subject, $message);
